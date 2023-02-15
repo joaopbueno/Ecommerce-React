@@ -28,7 +28,7 @@ const Navbar = () => {
       position="fixed"
       top="0"
       left="0"
-      xIndex="1"
+      x-index="1"
     >
       <Box
         width="80%"
