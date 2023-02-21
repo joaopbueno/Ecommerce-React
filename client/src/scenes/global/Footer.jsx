@@ -17,7 +17,7 @@ const Footer = () => {
                 columnGap="clamp(20px, 30px, 40px)"
             >
                 <Box width="clamp(20%, 30%, 40%)">      
-                    <Typography variant="h4" fontWight="bold" mb="30px" color={shades.secondary[500]}>ECOMMER</Typography>
+                    <Typography variant="h4" fontWeight="bold" mb="30px" color={shades.secondary[500]}>ECOMMER</Typography>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur repellendus ullam molestias dolorum harum sed unde ex accusantium maxime, ipsa consequatur iusto odio explicabo debitis modi illo earum! Quidem.
                     </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </Box>
 
                 <Box width="clamp(20%, 25%, 40%)">      
-                    <Typography variant="h4" fontWight="bold" mb="30px">Contact Us</Typography>
+                    <Typography variant="h4" fontWeight="bold" mb="30px">Contact Us</Typography>
                     <Typography mb="30px">50 north Whatever Blvd, Washington, DC 10501</Typography>
                     <Typography mb="30px">Email: somethingsomething@gmail.com</Typography>
                     <Typography mb="30px"></Typography>

@@ -29,6 +29,7 @@ const Navbar = () => {
       top="0"
       left="0"
       x-index="1"
+      zIndex="5"
     >
       <Box
         width="80%"

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { IconButton, Box, Typography, useTheme, Button } from "@mui/material";
@@ -36,18 +35,19 @@ const Item = ({ item, width }) => {
         onMouseOut={() => setIsHovered(false)}
       >
         <img
-          alte={item.name}
+          alt={item.name}
           width="300px"
           height="400px"
           src={`http://localhost:1337${url}`}
-          onClick={() => navigate(`/item${item.id}`)}
+          onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />
         <Box
-          display={isHovered ? 'block' : 'none'}
+          display={isHovered ? "block" : "none"}
           position="absolute"
           bottom="10%"
           left="0"
+          width="100%"
           padding="0 5%"
         >
           <Box display="flex" justifyContent="space-between">
@@ -65,21 +65,20 @@ const Item = ({ item, width }) => {
                 <AddIcon />
               </IconButton>
             </Box>
-
             <Button
               onClick={() => {
                 dispatch(addToCart({ item: { ...item, count } }));
               }}
               sx={{ backgroundColor: shades.primary[300], color: "white" }}
             >
-              ADD TO CART
+              Add to Cart
             </Button>
           </Box>
         </Box>
       </Box>
 
       <Box mt="3px">
-      <Typography variant="subtitle2" color={shades.neutral.dark}>
+        <Typography variant="subtitle2" color={shades.neutral.dark}>
           {/* {category
             .replace(/([A-Z])/g, " $1")
             .replace(/^./, (str) => str.toUpperCase())} */}
